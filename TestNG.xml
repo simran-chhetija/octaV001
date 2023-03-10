@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="octaviusV1">
+
+	<listeners>
+		<listener class-name="com.octavius.utilities.Reporting" />
+	</listeners>
+
+
+	<test name="Octavius Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			 <class name="com.octavius.testCases.TC_LoginTest_001" /> 
+			<!--  <class name="com.octavius.testCases.TC_LoginDDT_002" /> -->
+			 <class name="com.octavius.testCases.TC_AddSupervisorTest_003" /> 
+			<!-- <class name="com.octavius.testCases.TC_AddSiteTest_004" /> -->
+
+		</classes>
+
+	</test>
+
+</suite>
